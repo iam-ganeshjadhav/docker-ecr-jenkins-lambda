@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         AWS_REGION = 'ap-south-1'
-        ACCOUNT_ID = '<account-id>'
+        ACCOUNT_ID = '678025037105'
         REPO_NAME = 'devops-demo'
         IMAGE_TAG = "${BUILD_NUMBER}"
     }
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/<username>/docker-ecr-jenkins-lambda.git'
+                git 'https://github.com/iam-ganeshjadhav/docker-ecr-jenkins-lambda.git'
             }
         }
 
