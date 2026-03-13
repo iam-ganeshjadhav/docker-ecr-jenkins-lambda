@@ -10,11 +10,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Code') {
-            steps {
-                git 'https://github.com/iam-ganeshjadhav/docker-ecr-jenkins-lambda.git'
-            }
-        }
 
         stage('Build Docker Image') {
             steps {
